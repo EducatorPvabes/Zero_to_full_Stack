@@ -5,10 +5,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>HTML TABLE</title>
 </head>
-<body>
    <!-- TABLE -->
 <table border="1">
-   <caption>Student Data</caption>
+   <caption><strong>Student Data</strong></caption>
+   <!-- thead -->
    <thead>
    <tr>
       <th>Firstname</th>
@@ -16,7 +16,8 @@
       <th>Age</th>
    </tr>
    </thead>
-   <tbody
+   <!-- table body -->
+   <tbody>
    <tr>
       <td>John</td>
       <td>Doe</td>
@@ -35,5 +36,66 @@
    </tr>
    </tbody>
 </table>
+<br>
+<!-- Rowspan, Colspan, and Table Attributes -->
+ <!-- border="1" → Creates a visible border around each table cell (1 pixel thick line) -->
+<!-- cellpadding="10" → Adds 10 pixels of space *inside* each cell (space between the content and the border) -->
+<!-- cellspacing="0" → Removes space *between* the cells, making them appear tightly joined (space between table cells (outer gap between borders).) -->
+
+    <table border="1" cellpadding="50" cellspacing="0">
+      <!-- The <caption> tag is used inside a <table> to give a title or description to that table.
+It helps users understand what the table is about. -->
+
+   <caption>Weekly Class Schedule</caption>
+        <tr>
+            <th>Day</th>
+            <th>9-10 AM</th>
+            <th>10-11 AM</th>
+            <th>11-12 PM</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <!-- It tells the browser that a single cell should span (merge) across multiple rows. -->
+            <!-- It means one table cell will join or cover more than one row. -->
+            <td rowspan="2">Math</td>
+            <td>Science</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <!-- It tells the browser that one cell should join or cover multiple columns. -->
+             <!-- colspan lets a cell stretch sideways (left to right) across several columns. -->
+            <td colspan="2">Computer Lab</td>
+        </tr>
+    </table>
+<br>
+
+<!-- HTML Table -->
+  <h2>Student Table </h2>
+
+  <table border="10" cellpadding="10" cellspacing="0">
+    <caption>Student Marks</caption>
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Rahul</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Neha</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Rohit</td>
+      <td>75</td>
+  </table>
+
+  
 </body>
 </html>
