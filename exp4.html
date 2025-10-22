@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+ </head>
+ <body>
+    <h1 align="center">Hotel Room Booking Form</h1>
+    <form action="#" method="post">
+        <!-- personal information -->
+         <fieldset>
+            <legend>Personal Information</legend>
+
+        <label for="Name">Full Name:</label>
+        <input type = "text" id="name" id="Name" name="Name" required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+        <br><br>
+<fieldset>
+            <legend>Booking Details</legend>
+        <!-- booking details -->
+         <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <br><br>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <br><br>
+            <label for="guests">Number of guests</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+            <br><br>
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select>
+            </fieldset>
+            <br><br>
+            <fieldset>
+            <legend>Additional Services</legend>
+        
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="4" cols="50"></textarea>
+            </fieldset>
+            <br><br>
+            <!-- Buttons -->
+             <button type="submit">Book Now</button>
+                <button type="reset">Reset</button>
+
+    </form>
+ </body>
+ </html>
