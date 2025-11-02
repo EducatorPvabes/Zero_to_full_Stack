@@ -1,0 +1,13 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
+p{
+    color: green;
+    font-size: 70px;
+    line-height: 1.5;
+}
+body{
+    background-color: lightgrey;
+}
